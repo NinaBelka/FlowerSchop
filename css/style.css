@@ -1,27 +1,31 @@
 @font-face {
   font-family: 'Gotham Pro Light';
-  src: url('../fonts/GothamPro-Light.woff') format('woff');
+  src: url('../fonts/GothamPro-Light.woff2') format('woff2'),
+    url('../fonts/GothamPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham Pro Medium';
-  src: url('../fonts/GothamPro-Medium.woff') format('woff');
+  src: url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+    url('../fonts/GothamPro-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro.woff') format('woff');
+  src: url('../fonts/GothamPro.woff2') format('woff2'),
+    url('../fonts/GothamPro.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Myriad Pro Regular';
-  src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+    url('../fonts/MyriadPro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
