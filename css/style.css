@@ -30,7 +30,9 @@
   font-style: normal;
 }
 
-* {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -92,4 +94,164 @@ body {
   line-height: normal;
   color: #FF3469;
   text-align: right;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 100px 0 77px;
+  border-bottom: 1px solid #4c4c4c;
+}
+
+.hero-title {
+  font-family: 'Gotham Pro Medium';
+  font-size: 34px;
+  letter-spacing: 0.34px;
+  margin: 0;
+  margin-bottom: 34px;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  display: block;
+  font-family: 'Gotham Pro Light';
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 87px;
+}
+
+.flowers-slider {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+:root {
+  --swiper-navigation-size: 18px;
+}
+
+.hero-cta {
+  font-family: 'Gotham Pro Light';
+  display: block;
+  font-size: 19px;
+  letter-spacing: 0.19px;
+  line-height: 23px;
+  margin-bottom: 35px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #ff2e55;
+  padding: 26px 65px;
+}
+
+/* Reviews */
+
+.reviews {
+  padding: 100px 0;
+}
+
+.reviews-title {
+  font-family: 'Gotham Pro Medium';
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 95px;
+}
+
+.review-slide {
+  padding: 0 60px;
+}
+
+.review-image {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  font-family: 'Gotham Pro Light';
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 50px;
+}
+
+.review-image:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.review-image>* {
+  position: relative;
+}
+
+.review-image-1 {
+  background: #000000 url('../img/reviews/review-1.jpeg');
+  background-size: cover;
+}
+
+.review-image-2 {
+  background: #000000 url('../img/reviews/review-2.jpg');
+  background-size: cover;
+}
+
+.review-image-3 {
+  background: #000000 url('../img/reviews/review-3.jpg');
+  background-size: cover;
+}
+
+.reviews-text {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 21.6px;
+  margin-bottom: 10px;
+}
+
+.review-link {
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 21.6px;
+  color: #F24841;
+}
+
+/* Advantages */
+
+.advantages {
+  text-align: center;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #4C4C4C;
+}
+
+.advantages-wrapper {
+  min-height: 82px;
+  margin-bottom: 30px;
+}
+
+.advantages-text {
+  font-family: 'Gotham Pro Medium';
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
