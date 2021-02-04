@@ -131,6 +131,17 @@ body {
   margin-bottom: 60px;
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '';
+}
+
+.arrow-prev,
+.arrow-next {
+  background-color: #292929;
+  border: none;
+}
+
 :root {
   --swiper-navigation-size: 18px;
 }
@@ -152,6 +163,8 @@ body {
   color: #FFFFFF;
   background-color: #ff2e55;
   padding: 26px 65px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Reviews */
@@ -160,7 +173,7 @@ body {
   padding: 100px 0;
 }
 
-.reviews-title {
+.sections-title {
   font-family: 'Gotham Pro Medium';
   font-size: 30px;
   letter-spacing: 0.3px;
@@ -168,7 +181,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 95px;
+}
+
+.reviews-slider {
+  margin-top: 95px;
 }
 
 .review-slide {
@@ -254,4 +270,247 @@ body {
   letter-spacing: 0.2px;
   line-height: 25px;
   text-transform: uppercase;
+}
+
+/* Goods */
+
+.goods {
+  padding: 100px 0;
+}
+
+.goods-description {
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 20px 0 75px;
+}
+
+.card {
+  text-align: center;
+  border: 3px solid #FFFFFF;
+  padding: 33px 35px 30px 35px;
+  margin-top: 27px;
+}
+
+.good-card-image {
+  display: flex;
+  justify-content: center;
+  height: 72px;
+
+}
+
+.card-title {
+  font-family: 'Gotham Pro Medium';
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 23px 0 20px;
+}
+
+.card-label {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 17px;
+  margin-bottom: 7px;
+}
+
+.colors {
+  margin-bottom: 16px;
+}
+
+.color-label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.color-input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -9;
+}
+
+.color-label.white {
+  background-color: #FFFFFF;
+}
+
+.color-label.biege {
+  background-color: #F7B496;
+}
+
+.color-label.pink {
+  background-color: #ED366E;
+}
+
+.color-label.red {
+  background-color: #FF0000;
+}
+
+.color-label.blue {
+  background-color: #12129D;
+}
+
+.counter-group {
+  margin-bottom: 20px;
+}
+
+.counter-button {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #292929;
+  border: none;
+  cursor: pointer;
+}
+
+.counter-input {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #292929;
+  margin: 0 15px;
+}
+
+.card-button {
+  font-family: 'Gotham Pro Medium';
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding: 14px 26px;
+}
+
+.more {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 17px;
+  color: #F24841;
+  text-align: center;
+  margin-top: 39px;
+  padding: 10px;
+}
+
+.more:after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  vertical-align: middle;
+  background: url('../img/caret.svg') no-repeat center;
+  margin-left: 14px;
+}
+
+/* Offer */
+
+.offer {
+  background-color: #1A1A1A;
+  border-bottom: 1px solid #4c4c4c;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.offer-link {
+  display: block;
+  font-family: 'Gotham Pro Medium';
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 57px;
+}
+
+.offer-label {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 17px;
+  margin-bottom: 22px;
+}
+
+.offer-phone {
+  display: block;
+  font-size: 36px;
+  letter-spacing: 0.36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Footer */
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+}
+
+.footer-menu-link {
+  font-family: 'Gotham Pro Medium';
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer-menu-item {
+  margin-right: 30px;
+}
+
+.social {
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  line-height: 20px;
+  margin-right: 15px;
+}
+
+.footer-info {
+  text-align: right;
+}
+
+.footer-label {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+
+.footer-phone {
+  display: block;
+  font-family: 'Gotham Pro Medium';
+  font-size: 24px;
+  letter-spacing: 0.24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.footer-white {
+  color: #292929;
+  background-color: #FFFFFF;
+  padding: 35px 0;
+}
+
+.author,
+.author-link {
+  font-family: 'Myriad Pro Regular';
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  line-height: 15px;
+}
+
+.author-link {
+  color: #292929;
 }
