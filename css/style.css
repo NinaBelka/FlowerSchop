@@ -66,6 +66,10 @@ body {
   color: #FF3469;
 }
 
+.header-contacts {
+  text-align: right;
+}
+
 .header-phone {
   display: block;
   font-family: 'Gotham Pro Medium';
@@ -74,7 +78,6 @@ body {
   letter-spacing: 0.2px;
   color: #FFFFFF;
   text-decoration: none;
-  text-align: right;
   margin-bottom: 7px;
 }
 
@@ -83,7 +86,6 @@ body {
   font-size: 12px;
   letter-spacing: 0.12px;
   line-height: normal;
-  text-align: right;
   margin-bottom: 16px;
 }
 
@@ -93,7 +95,6 @@ body {
   letter-spacing: 0.16px;
   line-height: normal;
   color: #FF3469;
-  text-align: right;
 }
 
 /* Hero */
@@ -105,24 +106,24 @@ body {
 }
 
 .hero-title {
+  max-width: 690px;
   font-family: 'Gotham Pro Medium';
   font-size: 34px;
   letter-spacing: 0.34px;
-  margin: 0;
-  margin-bottom: 34px;
-  line-height: 41px;
+  margin: 0 auto 34px;
+  line-height: 45px;
   text-transform: uppercase;
 }
 
 .hero-description {
   display: block;
+  max-width: 590px;
+  margin: 0 auto 87px;
   font-family: 'Gotham Pro Light';
   font-size: 18px;
   letter-spacing: 0.18px;
   line-height: 22px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 87px;
 }
 
 .flowers-slider {
@@ -134,6 +135,10 @@ body {
 .swiper-button-next:after,
 .swiper-button-prev:after {
   content: '';
+}
+
+.slider-arrow {
+  padding: 20px;
 }
 
 .arrow-prev,
@@ -513,4 +518,119 @@ body {
 
 .author-link {
   color: #292929;
+}
+
+.modal {
+  display: none;
+  color: #292929;
+  text-align: center;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.modal-button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  .header-contacts {
+    text-align: center;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 15px 30px;
+  }
+
+  .sections-title {
+    font-size: 24px;
+  }
+
+  .reviews {
+    padding: 50px 0;
+  }
+
+  .reviews-slider {
+    margin-top: 50px;
+  }
+
+  .review-image {
+    margin-right: 0;
+  }
+
+  .advantages {
+    padding-bottom: 0;
+  }
+
+  .advantages-text {
+    font-size: 16px;
+  }
+
+  .goods {
+    padding: 50px 0;
+  }
+
+  .goods-description {
+    margin-bottom: 30px;
+  }
+
+  .colors {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .card-label {
+    margin: 20px auto;
+  }
+
+  .offer {
+    padding: 50px 0;
+  }
+
+  .offer-link {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .offer-phone {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .offer,
+  .offer-title,
+  .footer-info {
+    text-align: left
+  }
+
+  .footer-menu {
+    margin-bottom: 15px;
+  }
 }
