@@ -508,6 +508,11 @@ body {
   padding: 35px 0;
 }
 
+.author-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .author,
 .author-link {
   font-family: 'Myriad Pro Regular';
@@ -620,6 +625,11 @@ body {
   .offer-phone {
     font-size: 24px;
   }
+
+  .author-text {
+    justify-content: flex-start;
+  }
+
 }
 
 @media (max-width: 576px) {
